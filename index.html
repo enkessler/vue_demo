@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+<div id="app">
+    <search-form @search-result="handleSearchResult"></search-form>
+    <company-profile :profile-data="searchResult" v-if="searchResult"></company-profile>
+</div>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./components/company_profile.js"></script>
+<script src="./components/search_form.js"></script>
+<script src="./main.js"></script>
